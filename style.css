@@ -1,0 +1,56 @@
+body{
+background:#111;
+color:white;
+text-align:center;
+font-family:Arial;
+overflow:hidden;
+}
+
+.page{
+display:none;
+margin-top:50px;
+padding:20px;
+}
+
+.active{
+display:block;
+animation:fade 1s;
+}
+
+img{
+width:300px;
+border-radius:15px;
+margin:20px;
+box-shadow:0 0 20px pink;
+}
+
+button{
+padding:12px 25px;
+font-size:18px;
+background:pink;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+.final{
+font-size:30px;
+color:gold;
+}
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+pointer-events:none;
+}
